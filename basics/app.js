@@ -48,14 +48,17 @@ console.log(isFreezing);
 
 // -----Challenge 3----------
 function price (i) {
-  if(i <= 7){
-    console.log('You are eligible for Child Discount');
-  } else if (i >= 65) {
-    console.log('You are eligible for Senior Discount');
-  } else {
-    console.log('You are in Standard Rate Category');
-  }
+  let child = i <= 7
+  let standard = i < 65 && i > 7
+  let senior = i >= 65
+
+  let discount = i <= 7 || i >= 65
+
+  console.log(child + ' discount');
+  console.log(senior + ' discount');
+
+  console.log(discount);
 }
 
-console.log(price(7));
+console.log(price(26));
   
