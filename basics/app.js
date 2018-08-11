@@ -45,6 +45,12 @@ let isFreezing = temp <= 32;
 
 console.log(isFreezing);
 
+if(isFreezing)
+  console.log('True');
+  else 
+  console.log('false');
+
+
 
 // -----Challenge 3----------
 function price (i) {
@@ -62,3 +68,13 @@ function price (i) {
 
 console.log(price(26));
   
+
+//-----True or False
+
+let isAccountLocked = true
+
+if (isAccountLocked) {
+  console.log('Welcome');
+} else {
+  console.log('Denied');
+}
