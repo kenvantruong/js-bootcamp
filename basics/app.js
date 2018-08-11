@@ -16,11 +16,18 @@ let dogYears = (age + 1) / 7;
 console.log(dogYears);
 
 //Challenge Area
-let student1 = 1800
-let maxScore = 2000
 
-let testScore = student1 / maxScore
+let studentScore = 18
+let maxScore = 20
+let percent = (studentScore / maxScore) * 100 + '%';
 
-console.log(Math.ceil(testScore) +'%');
+console.log(percent);
 
+
+
+//Assigning Variables
+let dogName = 'Mylo'
+dogName += ' Truong'
+
+console.log(dogName);
 
