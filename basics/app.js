@@ -78,3 +78,28 @@ if (isAccountLocked) {
 } else {
   console.log('Denied');
 }
+
+
+//-----Challenge Area
+
+let temperature = 95;
+
+if(temperature >= 90){
+  console.log('It is hot outside!');
+} else if (temperature <= 45) {
+  console.log('It is freezing outside!');
+} else {
+  console.log('Go for it. It is pretty nice!');
+}
+
+// Logical And Operator Challenge
+let isGuestOneVegan = false;
+let isGuestTwoVegan = false;
+
+if(isGuestOneVegan === true && isGuestTwoVegan === true){
+  console.log('Vegan Dishes Only Menu');
+} else if (isGuestOneVegan === false && isGuestTwoVegan === true || isGuestOneVegan === true && isGuestTwoVegan === false) {
+  console.log('Serve Both Vegan and Meat menu ');
+} else {
+  console.log('Serve Anything!');
+}
