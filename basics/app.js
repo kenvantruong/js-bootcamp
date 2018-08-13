@@ -96,10 +96,46 @@ if(temperature >= 90){
 let isGuestOneVegan = false;
 let isGuestTwoVegan = false;
 
-if(isGuestOneVegan === true && isGuestTwoVegan === true){
+if(isGuestOneVegan && isGuestTwoVegan){
   console.log('Vegan Dishes Only Menu');
 } else if (isGuestOneVegan === false && isGuestTwoVegan === true || isGuestOneVegan === true && isGuestTwoVegan === false) {
   console.log('Serve Both Vegan and Meat menu ');
 } else {
   console.log('Serve Anything!');
 }
+
+
+// Lexical Scope (Static Scope)
+
+let list = [10,55,25,55];
+let action = 1;
+
+if(true) {
+  let gameOne = 'GameOne'
+  console.log(gameOne);
+  
+  if(true) {
+    let gameTwo = 'GameTwo'
+    console.log(gameOne);
+    console.log(gameTwo);
+  }
+}
+
+
+
+console.log(action);
+
+
+// Scope Two
+
+// let global = 'Global Scope';
+
+if(true){
+  if(true){
+    local = 'Local Scope'
+   console.log(local);
+  }
+  
+}
+
+console.log(local);
